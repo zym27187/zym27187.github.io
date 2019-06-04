@@ -1,2 +1,2 @@
-# zym27187.http-github.io
+# zym27187.github.io
 use for blog
