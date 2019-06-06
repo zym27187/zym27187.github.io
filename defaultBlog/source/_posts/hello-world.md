@@ -3,6 +3,7 @@ title: "测试标题"
 tags: ["test01","test02","test03"]
 categories: "分类test01"
 preview_text: 测试文章预览内容</br>换行
+comment: true
 
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
