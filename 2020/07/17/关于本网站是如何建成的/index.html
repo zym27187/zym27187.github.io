@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Ireina">
+    
+    
+    
+    
+    
+    
+    <title>关于本网站是如何建成的 | Zym Blog</title>
+    <link href="”https://zym27187.github.io“" rel="”prefetch”">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/highslide/highslide-full.min.js"></script>
+    <link rel="stylesheet" href="/js/highslide/highslide.css">
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/author.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+</head></html>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://zym27187.github.io" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://zym27187.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Zym</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class>
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/技术/">技术</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/Galgame/">Galgame</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/Postman/">Postman</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/介绍/">介绍</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/建站/">建站</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class>
+                    <a href="/message">
+                        <i class="fa fa-heart"></i>留言板
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://zym27187.github.io">Zym Blog</a>
+        >
+        <span>关于本网站是如何建成的</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2020/07/17/关于本网站是如何建成的/">关于本网站是如何建成的</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/建站/">建站</a>, 
+                
+                <a href="/tags/教程/">教程</a>, 
+                
+                <a href="/tags/hexo/">hexo</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-07-17
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2020/07/17/关于本网站是如何建成的/">关于本网站是如何建成的</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-07-17
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/建站/">建站</a>, 
+                
+                <a href="/tags/教程/">教程</a>, 
+                
+                <a href="/tags/hexo/">hexo</a>
+                
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h2 id="技术汇总"><a href="#技术汇总" class="headerlink" title="技术汇总"></a>技术汇总</h2><p><a href="https://nodejs.org/zh-cn/" title="下载Node.js" target="_blank" rel="noopener">Node.js</a><br><a href="https://git-scm.com/" title="下载git" target="_blank" rel="noopener">git</a><br><a href="https://hexo.io/zh-cn/docs/" title="hexo官方说明文档" target="_blank" rel="noopener">hexo</a><br>你可能需要了解:<br><a href="https://www.liaoxuefeng.com/wiki/1022910821149312" title="教程" target="_blank" rel="noopener">JavaScript</a><br><a href="https://ejs.bootcss.com/" title="JavaScript 模板引擎" target="_blank" rel="noopener">EJS模板</a></p>
+<h2 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="Hexo初始化"></a>Hexo初始化</h2><p>1.你需要下载<a href="https://nodejs.org/zh-cn/" title="下载Node.js" target="_blank" rel="noopener">Node.js</a>并安装,<a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" title="菜鸟安装教程" target="_blank" rel="noopener">安装配置教程</a>。</p>
+<p>2.你需要下载<a href="https://git-scm.com/" title="下载git" target="_blank" rel="noopener">git</a>并安装。</p>
+<ul>
+<li><p>然后打开Git Bash，将你的Git与GitHub帐号绑定，依次输入指令：<br><code>git config --global user.name&quot;你的GitHub用户名&quot;</code><br><code>git config --global user.email&quot;你的GitHub注册邮箱&quot;</code><br>生成你的密钥文件：<br><code>ssh-keygen -t rsa -C&quot;你的GitHub注册邮箱&quot;</code><br>然后直接三个回车即可，默认不需要设置密码</p>
+<p>然后找到生成的.ssh的文件夹中的id_rsa.pub密钥，将内容全部复制<br><img src="https://i.loli.net/2019/06/10/5cfe0af619e8341838.png" alt="img2"><br>打开<a href="https://github.com/settings/keys" target="_blank" rel="noopener">GitHub_Settings_keys</a>页面，新建new SSH Key<br><img src="https://i.loli.net/2019/06/10/5cfe0e443141c45797.png" alt="img3"><br>Title为标题，任意填即可，将刚刚复制的id_rsa.pub内容粘贴进去，最后点击Add SSH key。<br>在Git Bash中检测GitHub公钥设置是否成功，输入 <code>ssh git@github.com</code><br><img src="https://i.loli.net/2019/06/10/5cfe1167ee29c89740.jpg" alt="img4"><br>如上则说明成功。</p>
+<ul>
+<li>这里之所以设置GitHub密钥原因是，通过非对称加密的公钥与私钥来完成加密，公钥放置在GitHub上，私钥放置在自己的电脑里。GitHub要求每次推送代码都是合法用户，所以每次推送都需要输入账号密码验证推送用户是否是合法用户，<strong>为了省去每次输入密码的步骤</strong>，采用了ssh，当你推送的时候，git就会匹配你的私钥跟GitHub上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。这样可以保证每次的推送都是正确合法的。</li>
+</ul>
+</li>
+</ul>
+<p>3.安装hexo,打开Git bash依次执行(<strong>首先需要跳转到你本地的your-user-name.github.io文件夹目录</strong>)</p>
+<ol>
+<li><p><code>npm install -g hexo-cli</code></p>
+</li>
+<li><p><code>hexo init &lt;folder&gt;</code></p>
+<ul>
+<li>如果指定 &lt;folder&gt;，便会在目前的资料夹建立一个名为 &lt;folder&gt; 的新资料夹；否则会在目前资料夹初始化。</li>
+</ul>
+</li>
+<li><p><code>npm install</code>   安装依赖</p>
+</li>
+<li><p><code>hexo generate</code>  生成网站</p>
+</li>
+<li><p><code>hexo server</code>  启动本地服务器</p>
+<ul>
+<li>网站会执行在<a href="http://localhost:port" target="_blank" rel="noopener">http://localhost:port</a> （port 预设为 4000，可在<strong>站点配置文件</strong>_config.yml 中设定）</li>
+</ul>
+</li>
+</ol>
+<h2 id="安装gal主题"><a href="#安装gal主题" class="headerlink" title="安装gal主题"></a>安装gal主题</h2><p>安装gal主题,参考<a href="https://github.com/ZEROKISEKI/hexo-theme-gal" target="_blank" rel="noopener">hexo-theme-gal</a>的步骤一步一步配置，或者可以自行选择其他你喜欢的hexo<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题</a>下载配置</p>
+<p>这里主要讲一下几个坑点，<br>1.生成分类页和标签页的时候不仅要添加type还要添加layout，否则就是no found，具体请看<a href="https://www.zhihu.com/question/29017171/answer/364705653" target="_blank" rel="noopener">hexo 下的分类和表签无法显示，怎么解决？ - 虾哔哔的回答 - 知乎</a><br>例如</p>
+<pre><code>1       title: tags
+2       date: 2018-12-09 17:26:37
+3       type: tags
+4       layout: &quot;tags&quot;    </code></pre><ul>
+<li>layout指向gal主题里的layout文件夹路径</li>
+</ul>
+<p>2.关于自定义页,需要在hexo站点目下运行:<br><code>hexo new page about</code></p>
+<ul>
+<li>创建的页面在 站点根目录/sourse里配置</li>
+</ul>
+<p>3.favicon.ico需要放到 站点根目录/sourse，碰到favicon没变的情况是缓存原因，常规清除浏览数据手段无效，需要手动去放置favicon缓存文件的位置删除，路径自行搜索</p>
+<p>4.该主题的友情链接和个人链接设为false是不生效的，因为代码中没进行这样的判断，如不需要请自行找到/themes/gal/layout/_partial下的sidebar.js修改</p>
+<p>5.评论系统使用的是gitment，听说不太好使，经常加载不出来，但是我用的海星。唯一的缺点是每篇文章第一次都要手动初始化一遍评论。配置评论系统的前置你已经部署好站点了，具体步骤根据<a href="https://github.com/ZEROKISEKI/hexo-theme-gal/wiki/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E" title="评论系统配置说明" target="_blank" rel="noopener">这个</a>来</p>
+<h2 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h2><p>在部署到GitHubPages前，需要创建GitHub个人仓库</p>
+<p>登录到GitHub,如果没有GitHub帐号，使用你的邮箱注册GitHub帐号：<a href="https://github.com/" target="_blank" rel="noopener">Build software better, together</a>点击GitHub中的New repository创建新仓库，仓库名应该为：用户名.github.io这个用户名使用你的GitHub帐号名称代替，这是固定写法，比如我的仓库名为：<br><img src="https://i.loli.net/2019/06/10/5cfe03813b9c321306.png" alt="img1"></p>
+<h2 id="发布到-GitHubPages"><a href="#发布到-GitHubPages" class="headerlink" title="发布到 GitHubPages"></a>发布到 GitHubPages</h2><p>发布之前首先要将Hexo与GitHub关联起来，打开<strong>站点配置文件</strong>_config.yml，翻到最后修改为：</p>
+<pre><code>deploy:
+type: git
+repo: 这里填入你之前在GitHub上创建仓库的完整路径,记得加上.git
+branch: master  //分支为master</code></pre><p>参考如下：<br><img src="https://i.loli.net/2019/06/10/5cfe150c8bae929667.png" alt="img5"></p>
+<ul>
+<li>其实就是给hexo d 这个命令做相应的配置，让hexo知道你要把blog部署在哪个位置<br>接下来分别输入三条命令：<br><code>hexo clean</code>  清除站点缓存<br><code>hexo g</code>  生成站点<br><code>hexo d</code>  部署站点</li>
+</ul>
+<h4 id="nbsp-nbsp-nbsp-nbsp-然后你的站点就已经上线了，可以在网络上被访问了。后续有更改后需要重新执行三条命令部署站点"><a href="#nbsp-nbsp-nbsp-nbsp-然后你的站点就已经上线了，可以在网络上被访问了。后续有更改后需要重新执行三条命令部署站点" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;然后你的站点就已经上线了，可以在网络上被访问了。后续有更改后需要重新执行三条命令部署站点"></a>&nbsp;&nbsp;&nbsp;&nbsp;然后你的站点就已经上线了，可以在网络上被访问了。后续有更改后需要重新执行三条命令部署站点</h4><h2 id="关于网站源码备份"><a href="#关于网站源码备份" class="headerlink" title="关于网站源码备份"></a>关于网站源码备份</h2><p>最好的方式是在之前创建的个人仓库中新增一个分支，把源码备份上去</p>
+<p>1.进入本地的your-user-name.github.io文件夹下<br>2.在本地新建一个分支：<br>    <code>git branch hexo</code><br>3.切换到你的新分支:<br>    <code>git checkout hexo</code><br>4.将新分支发布在github上：<br>    <code>git push origin hexo</code><br>5.在github网站设置hexo为默认分支</p>
+<ol>
+<li>进入本地的your-user-name.github.io文件夹下</li>
+<li><code>git clone https://github.com/your-user-name/your-user-name.github.io.git</code><br>此时显示分支为hexo</li>
+<li><code>git add --all</code></li>
+<li><code>git commit -m &quot;blog source commit&quot;</code></li>
+<li><code>git push origin hexo</code></li>
+</ol>
+<h4 id="nbsp-nbsp-nbsp-nbsp-至此博客源代码就备份到了hexo分支上面。"><a href="#nbsp-nbsp-nbsp-nbsp-至此博客源代码就备份到了hexo分支上面。" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;至此博客源代码就备份到了hexo分支上面。"></a>&nbsp;&nbsp;&nbsp;&nbsp;至此博客源代码就备份到了hexo分支上面。</h4><h2 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h2><p>域名需要购买，过段时间有空再研究。</p>
+<p><strong>tips:文章推荐用markdown来写，比较方便。<a href="https://www.appinn.com/markdown/#precode" title="简体中文" target="_blank" rel="noopener">Markdown语法说明</a></strong></p>
+
+    </div>
+</article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = '关于本网站是如何建成的'
+    }
+</script>
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get" action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            Ireina
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/author.jpg" width="140" height="140" alt="个人头像" class="author-image">
+            <p class="author-description">个人网站，不定期更新，内容可能涉及包括但不限于测试、ACG以及感兴趣的东西</p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/29/ハミダシクリエイティブ介绍/">ハミダシクリエイティブ介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/28/查看Android的appPackage和Activity的便捷方法/">查看Android的appPackage和Activity的便捷方法</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/28/Postman界面及常用功能介绍/">Postman界面及常用功能介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/07/17/关于本网站是如何建成的/">关于本网站是如何建成的</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/28/Postman界面及常用功能介绍/">Postman界面及常用功能介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/29/ハミダシクリエイティブ介绍/">ハミダシクリエイティブ介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/07/17/关于本网站是如何建成的/">关于本网站是如何建成的</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/28/查看Android的appPackage和Activity的便捷方法/">查看Android的appPackage和Activity的便捷方法</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2020/07/17/关于本网站是如何建成的/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2020/07/17/关于本网站是如何建成的/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/Postman/" style="font-size: 12.05118117282787px;" class="tag-cloud-link">Postman</a>
+    
+    <a href="/tags/介绍/" style="font-size: 9.423516238709023px;" class="tag-cloud-link">介绍</a>
+    
+    <a href="/tags/建站/" style="font-size: 14.50132240269161px;" class="tag-cloud-link">建站</a>
+    
+    <a href="/tags/教程/" style="font-size: 10.41867683528438px;" class="tag-cloud-link">教程</a>
+    
+    <a href="/tags/hexo/" style="font-size: 15.968745802575635px;" class="tag-cloud-link">hexo</a>
+    
+    <a href="/tags/Appium/" style="font-size: 11.16360594949996px;" class="tag-cloud-link">Appium</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank">Hexo</a>
+    </li>
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/hexo-theme-gal" target="_blank">Galtheme</a>
+    </li>
+    
+</div>
+                
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 Ireina Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '7'
+    }
+</script>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
+
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Fri Jul 17 2020 18:04:47 GMT+0800'
+      window.commentConfig.owner = 'zym27187'
+      window.commentConfig.repo = 'zymBlog-for-comment'
+      window.commentConfig.client_id = '7b4ec57c18e382211f16'
+      window.commentConfig.client_secret = '1093a4bb8ed0f7c1ed677828b6079ffbc49285b0'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Fri Jul 17 2020 18:04:47 GMT+0800',
+        owner: 'zym27187',
+        repo: 'zymBlog-for-comment',
+        client_id: '7b4ec57c18e382211f16',
+        client_secret: '1093a4bb8ed0f7c1ed677828b6079ffbc49285b0',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
+
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Ireina">
+    
+    
+    
+    
+    
+    
+    <title>Postman界面及常用功能介绍 | Zym Blog</title>
+    <link href="”https://zym27187.github.io“" rel="”prefetch”">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/highslide/highslide-full.min.js"></script>
+    <link rel="stylesheet" href="/js/highslide/highslide.css">
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/author.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+</head></html>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://zym27187.github.io" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-navbar-collapse" aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://zym27187.github.io">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Zym</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class>
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/技术/">技术</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/categories/Galgame/">Galgame</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/Postman/">Postman</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/介绍/">介绍</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/建站/">建站</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class>
+                    <a href="/message">
+                        <i class="fa fa-heart"></i>留言板
+                    </a>
+                </li>
+                
+                
+                
+                <li class>
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://zym27187.github.io">Zym Blog</a>
+        >
+        <span>Postman界面及常用功能介绍</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2020/09/28/Postman界面及常用功能介绍/">Postman界面及常用功能介绍</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Postman/">Postman</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2020-09-28
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2020/09/28/Postman界面及常用功能介绍/">Postman界面及常用功能介绍</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2020-09-28
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/Postman/">Postman</a>
+                
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h2 id="技术相关"><a href="#技术相关" class="headerlink" title="技术相关"></a>技术相关</h2><p><a href="https://www.getpostman.com/" title="Postman官网" target="_blank" rel="noopener">Postman</a></p>
+<p>以及你可能需要了解:<br><a href="https://www.liaoxuefeng.com/wiki/1022910821149312" title="教程" target="_blank" rel="noopener">JavaScript</a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h4 id="nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-迟来的咕咕（最近终于腾出时间了），Postman界面及常用功能介绍，基于之前公司非保密性的培训文件内容，我看写的比较清晰，就放在这里了。"><a href="#nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-迟来的咕咕（最近终于腾出时间了），Postman界面及常用功能介绍，基于之前公司非保密性的培训文件内容，我看写的比较清晰，就放在这里了。" class="headerlink" title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;迟来的咕咕（最近终于腾出时间了），Postman界面及常用功能介绍，基于之前公司非保密性的培训文件内容，我看写的比较清晰，就放在这里了。"></a><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;迟来的咕咕（最近终于腾出时间了），Postman界面及常用功能介绍，基于之前公司非保密性的培训文件内容，我看写的比较清晰，就放在这里了。</strong></h4><h2 id="接口基本知识简介"><a href="#接口基本知识简介" class="headerlink" title="接口基本知识简介"></a>接口基本知识简介</h2><p><strong>接口测试定义</strong>：测试系统组件间接口的一种测试。接口测试主要用于检测外部系统与系统之间以及内部各个子系统之间的交互点。测试的重点是要检查数据的交换，传递和控制管理过程，以及系统间的相互逻辑依赖关系等。</p>
+<ol>
+<li><strong>接口测试-目的</strong><br>测试接口的正确性和稳定性</li>
+<li><strong>接口测试-原理</strong><br>模拟客户端向服务器发送请求报文，服务器接收请求报文后对相应的报文做处理并向客户端返回应答，客户端接收应答的一个过程</li>
+<li><strong>接口测试-优点</strong><br>为高复杂性的平台带来高效的缺陷监测和质量监督能力；平台越复杂，系统越庞大，接口测试的效果越明显（提高测试效率，提升用户体验，降低研发成本）</li>
+<li><strong>接口测试-常见接口</strong><ul>
+<li>1.webService接口：走soap协议通过http传输，请求报文和返回报文都是xml格式的。</li>
+<li>2.<strong>Http Api接口（应用程序编程接口）</strong>：走http协议，通过路径来区分调用的方法，请求报文都是key-value形式的，返回报文一般都是json串。</li>
+</ul>
+</li>
+<li><strong>接口测试-Http请求构成</strong><ul>
+<li>1.请求方法URL协议/版本</li>
+<li>2.请求头</li>
+<li>3.请求体</li>
+</ul>
+</li>
+<li><strong>接口测试-常用的请求方法</strong><ul>
+<li><strong>GET</strong>：向特定的资源发出请求。（数据展示在URL上）</li>
+<li><strong>POST</strong>：向指定资源提交数据进行处理请求（数据包含在请求体中，可能会导致新的资源的建立或已有资源的修改）</li>
+<li><strong>PUT</strong>：向指定资源位置上传其最新内容。（请求方式类似POST）</li>
+<li><strong>DELETE</strong>：请求服务器删除请求URL所标识的资源。（请求方式类似GET）</li>
+</ul>
+</li>
+</ol>
+<h2 id="Postman界面常用介绍"><a href="#Postman界面常用介绍" class="headerlink" title="Postman界面常用介绍"></a>Postman界面常用介绍</h2><p><img src="https://i.loli.net/2019/07/22/5d3585111ea6c80212.png" alt="img1"></p>
+<h2 id="Postman界面高级介绍"><a href="#Postman界面高级介绍" class="headerlink" title="Postman界面高级介绍"></a>Postman界面高级介绍</h2><p><img src="https://i.loli.net/2019/07/22/5d358634e482590962.png" alt="img2"></p>
+<h2 id="Postman常用操作介绍"><a href="#Postman常用操作介绍" class="headerlink" title="Postman常用操作介绍"></a>Postman常用操作介绍</h2><p><img src="https://i.loli.net/2019/07/23/5d36749e0caec90857.png" alt="图片3.png"><br>1.使用File -&gt; New Tab 或者工作台中的“+”图标创建一个新的工作台；</p>
+<p><img src="https://i.loli.net/2019/07/23/5d36749dc177083260.png" alt="图片4.png"><br>2.根据研发提供的接口数据实际情况，选择相应的接口请求方法和请求路径；<br><strong>例：全民营销后台管理，个体推广员查询接口，请求方法：POST，接口路径/marketing/platform/promoter/user/queryPage</strong></p>
+<p><img src="https://i.loli.net/2019/07/23/5d36749de15f095970.png" alt="图片5.png"><br>3.根据研发提供的接口数据实际情况，根据需求添加Cookies、Token等认证数据，传输数据类型，浏览器版本等配置。<strong>一般只是需要根据需求添加Cookies或Token，其他会自动在发送时添加。</strong><br><strong>例：通过登录全民营销抓包获取Cookies，复制添加到Headers中。（Content-Type会在添加Body时自动添加可忽略）</strong></p>
+<p><img src="https://i.loli.net/2019/07/23/5d36749ded81e19419.png" alt="图片6.png"><br>4.根据研发提供的接口数据实际情况，在Body中添加请求数据（<strong>常用情况适合post、put请求</strong>），请求数据类型必须严格按照接口所需类型，通常情况下选择x-www-form-urlencoded、raw。<br>x-www-form-urlencoded：会将表单内的数据转换为键值对，<br>raw：可以上传任意格式的文本，可以上传text、json、xml、html等。<br><strong>例：个体推广员查询接口数据类型为x-www-form-urlencoded，故使用图1的方式添加请求数据</strong></p>
+<p><img src="https://i.loli.net/2019/07/23/5d36749dd3f1738158.png" alt="图片7.png"><br>5.为了提高效率，可在Tests中设置断言，减少人工检验的步骤（<strong>需一定的学习成本，可以通过代码在Tests功能中实现更多的功能，例如：将当前接口响应返回的数据加入测试集的环境变量中等</strong>）
+<strong>例：对个体推广员查询接口设置响应断言，断言响应状态码为200。</strong></p>
+<p><img src="https://i.loli.net/2019/07/23/5d36749e1ff8083419.png" alt="图片8.png"><br><img src="https://i.loli.net/2019/07/23/5d3675fa5e8dc35417.png" alt="图片40.png"><br><img src="https://i.loli.net/2019/07/23/5d3675fa7197212626.png" alt="图片41.png"><br>6.根据研发提供的接口数据实际情况，填好相应的数据后，点击Send便向服务器发送请求。在Response处可查看服务器返回结果，结合数据库与研发提供的接口数据进行人工测试校验。<br><strong>Body</strong>：响应数据，<strong>一般使用默认的Pretty（格式化json/xml格式的内容）即可</strong>，Pretty可根据需求选择格式化内容。<br><strong>Cookies</strong>：常用于调用登录接口获取Cookies时查看，相对在Headers中获取直观。<br><strong>Headers</strong>：返回的响应头，很少关注。<br><strong>Test Results</strong>：在设置断言后有效，查看测试结果。<strong>（通过PASS，失败FAIL，并展示断言描述及失败原因）</strong><br><strong>Status</strong>：服务器返回的状态码，<strong>2开头的状态码说明请求是成功的，3开头的状态码说明请求被重定向了，4开头的状态码说明请求端发送的请求存在问题，5开头的状态码说明服务器处理请求存在问题。详情通过百度搜索查阅。</strong><br><strong>Time</strong>：服务器该接口的响应时间，衡量接口性能的其中一个标准。<br><strong>Size</strong>：返回请求的大小，很少关注。</p>
+<h2 id="Postman高级功能简介"><a href="#Postman高级功能简介" class="headerlink" title="Postman高级功能简介"></a>Postman高级功能简介</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上面简单介绍了常用的postman进行接口测试的操作，主要以人工测试接口为主，当然Postman也拥有自动化接口测试的持续集成功能，<strong>但缺点是需要一定的JS语言基础，进行断言的编写，变量参数的测试脚本编写，并需要搭建三方程序环境与数据库进行交互。</strong></p>
+<p>这里简单介绍下一些高级功能：</p>
+<ol>
+<li>Tests：断言，自动化实现的关键，根据预期数据进行接口正确性的判断，将接口的返回数据添加到环境变量，为下个接口提供数据等，节省了人工时间。</li>
+<li>测试集Collections：根据接口测试用例，对测试接口进行分类。执行测试集，根据排序从上到下执行所有接口测试。</li>
+<li>Cookies：为整个测试集提供Cookies，多用于用户登陆后调用的接口。</li>
+<li>Environment：为整个测试集提供环境变量，如基础的Url、Token、Cookies等。</li>
+<li>Import：从外部导入现成测试集，测试接口，环境变量，认证数据等，需json格式。</li>
+<li>Pre-request Script:设置发起请求的前置条件，需使用JS编写。</li>
+<li>Mocks：模拟服务器返回自定义的数据进行接口测试。</li>
+<li>Code：生成选择语言相应的接口请求的基础代码……</li>
+</ol>
+<p><img src="https://i.loli.net/2019/07/23/5d3662951b4c540826.png" alt="img8"><br><img src="https://i.loli.net/2019/07/23/5d36629531e5d34518.png" alt="img9"><br>1.点击添加图标，添加根据需求添加测试集。<br><strong>例：以个体推广员接口为例，创建测试集。</strong></p>
+<p><img src="https://i.loli.net/2019/07/23/5d3662957889544185.png" alt="图片12.png"><br>2.点击“…”图标，使用<strong>Add Folder</strong>可继续细分测试集，使用<strong>Add Request</strong>可新创建一个请求工作台。（<strong>不推荐按使用</strong>）</p>
+<p><img src="https://i.loli.net/2019/07/23/5d3662959159748781.png" alt="图片14.png"><br><img src="https://i.loli.net/2019/07/23/5d3662956953b47698.png" alt="图片15.png"><br>3.推荐使用在工作台预先设置好请求接口相关数据，然后点击<strong>Save添加接口测试用例至测试集</strong>。</p>
+<p><img src="https://i.loli.net/2019/07/23/5d3662959dcf738405.png" alt="图片16.png"><br>4.点击测试集右上方箭头展开，点击Run，进入测试集运行设置。</p>
+<p><img src="https://i.loli.net/2019/07/23/5d3662958916d93436.png" alt="图片17.png"><br>5.一般默认即可即可，点击蓝色按钮运行测试。<br><strong>Environment：环境变量</strong><br><strong>Lterations：循环次数</strong><br><strong>Delay：启动时间</strong><br><strong>Log Responses：记录响应信息，可选择所有、失败、不记录</strong><br><strong>Data：测试数据，支持从外部导入数据</strong></p>
+<p><img src="https://i.loli.net/2019/07/23/5d366295af89e42951.png" alt="图片18.png"><br><img src="https://i.loli.net/2019/07/23/5d36629558d9143086.png" alt="图片20.png"><br>6.测试集运行结束后的测试报告，<strong>绿色为PASS，红色为FAIL，点击有详细的请求信息</strong>。
+可通过Retry，重新进行测试集测试，<strong>Export Results可导出json格式的测试数据</strong>。</p>
+<p><img src="https://i.loli.net/2019/07/23/5d367a91820c817766.png" alt="图片21.png"><br><img src="https://i.loli.net/2019/07/23/5d367a91a2eb921674.png" alt="图片22.png"><br>7.添加全局Cookies：点击<strong>Add Cookie</strong>，根据接口实际情况替换<strong>cookie_XX=value</strong>，根据续期替换<strong>domain</strong>。（cookies的作用域，所有该域名的接口都可直接使用添加的cookies）</p>
+<p><img src="https://i.loli.net/2019/07/23/5d367a91ccfda19539.png" alt="图片23.png"><br><img src="https://i.loli.net/2019/07/23/5d367a916f78d55137.png" alt="图片24.png"><br><img src="https://i.loli.net/2019/07/23/5d367a91aa83541401.png" alt="图片25.png"><br><img src="https://i.loli.net/2019/07/23/5d367a9128a9589473.png" alt="图片26.png"><br>8.点击<strong>齿轮</strong>，可添加环境变量。<br>例：图三中添加了所有接口的基础Url。<br><strong>Variable：变量名</strong><br><strong>INITIAL VALUE：初始值</strong><br><strong>CURRENT VALUE：最新值</strong><br>设置环境变量后，对应的Url需使用参数化替换，参数变量名需与添加Variable时一致。</p>
+<p><img src="https://i.loli.net/2019/07/23/5d367a910b4f138414.png" alt="图片27.png"><br><img src="https://i.loli.net/2019/07/23/5d367a91bfc8820614.png" alt="图片28.png"><br>9.点击<strong>code</strong>，可以生成基础的接口请求代码语句，<br>根据需求，可选择不同的语言，并使用<strong>Copy to Clipboard</strong>复制到剪贴板。</p>
+<p><img src="https://i.loli.net/2019/07/23/5d367a911dd2051324.png" alt="图片29.png"><br><img src="https://i.loli.net/2019/07/23/5d367a91dc3ab66345.png" alt="图片30.png"><br><img src="https://i.loli.net/2019/07/23/5d368010868ef44899.png" alt="图片31.png"><br>10.Postman还具有接口自动录制功能，点击<strong>雷达图标</strong>，进入代理设置。<br><strong>Port：代理端口（默认5555）</strong><br><strong>Target：自动录制接口的保存目录</strong><br><strong>Filters选项：通过正则表达式来筛选关心，不关心的Url，以及请求方法。</strong><br>开启代理功能后，在浏览器中设置代理服务器，便可通过访问网站自动录制接口集了。</p>
+<p><img src="https://i.loli.net/2019/07/23/5d368010b904485561.png" alt="图片32.png"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postman可以通过三方工具xmysql连接mysql数据库，对mysql数据库进行增删查改，并提取数据作为断言依据。安装xmysql前<strong>需安装nodejs，并配置环境变量。</strong>使用<strong>npm –g install xmysql</strong>进行安装<strong>使用xmysql -h host_name -u user_name -p user_password -d database_name</strong>命令连接mysql数据库。</p>
+<p><img src="https://i.loli.net/2019/07/23/5d368010abfe769756.png" alt="图片33.png"><br>Postman的输入Url：<br><strong>http://(数据库IP):3000/api/(数据表名)</strong><br><strong>GET：</strong>查询该表数据<br><strong>POST：</strong>该表新增行数据<br><strong>DELETE：</strong>该表删除数据<br><strong>PATCH：</strong>更新行数据<br>连接Mysql数据库后，可以在Tests中使用JS语言编写脚本，通过获取数据库的数据设置断言等等。<strong>（细节用法有兴趣的小伙伴可以自行研究）</strong></p>
+<p>除以上描述的功能外，Postman可以结合其他工具，执行API持续集成测试。<br>例：<strong>Postman+Newman+Jenkins</strong>，下面做下简单的介绍。<br>Newman是专门用来运行Postman编写好的脚本的工具，需要额外安装。<strong>（安装Newman前需保证已安装nodejs，并配置好nodejs的环境变量。）</strong><br>1.在Jenkins分布服务器A下使用<strong>npm install –g newman</strong>进行安装，并使用<strong>newman –version</strong>确认newman安装成功。<br>2.导出Postman中所需的测试集文件，如下：<br><img src="https://i.loli.net/2019/07/23/5d3680106301052802.png" alt="图片34.png"><br><img src="https://i.loli.net/2019/07/23/5d36801076fa825780.png" alt="图片35.png"><br>选择测试集，点击“…”，点击<strong>Export</strong>，建议按照推荐以<strong>Collection v2.1</strong>导出测试集的json文件，并放入Jenkins分布服务器A的A文件夹中</p>
+<p><img src="https://i.loli.net/2019/07/23/5d368010d06e578193.png" alt="图片36.png"><br><img src="https://i.loli.net/2019/07/23/5d3680109d20091676.png" alt="图片37.png"><br>如图所示，下载测试集所需的环境变量及全局变量，同样放入Jenkins分布服务器A的A文件夹中</p>
+<p><img src="https://i.loli.net/2019/07/23/5d36801093c3687409.png" alt="图片38.png"><br>在Jenkins中构建器中，构建newman的运行任务。<br>基本命令：<strong>newman run 测试集json文件路径</strong><br>常用命令参数：<br><strong>-e</strong> 指定环境变量文件的路径        <strong>–reporters-html-export</strong> 指定生成Html报告路径<br><strong>-g</strong> 指定全局变量文件路径          <strong>-n case</strong> 运行次数，默认为1<br><strong>-folder</strong> 运行测试集中指定的子集   <strong>-reporters</strong> 指定生成报告格式</p>
+<p><img src="https://i.loli.net/2019/07/23/5d368010c409e99562.png" alt="图片39.png"><br>在构建后操作中，对生成报告的路径，名字等进行配置。Jenkins运行该任务后，便可在查看相应的测试报告了。<br><strong>（很多细节部分，有兴趣的小伙伴可自行研究。）</strong></p>
+
+    </div>
+</article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'Postman界面及常用功能介绍'
+    }
+</script>
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get" action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            Ireina
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/author.jpg" width="140" height="140" alt="个人头像" class="author-image">
+            <p class="author-description">个人网站，不定期更新，内容可能涉及包括但不限于测试、ACG以及感兴趣的东西</p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/29/ハミダシクリエイティブ介绍/">ハミダシクリエイティブ介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/28/查看Android的appPackage和Activity的便捷方法/">查看Android的appPackage和Activity的便捷方法</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/28/Postman界面及常用功能介绍/">Postman界面及常用功能介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/07/17/关于本网站是如何建成的/">关于本网站是如何建成的</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/28/Postman界面及常用功能介绍/">Postman界面及常用功能介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/29/ハミダシクリエイティブ介绍/">ハミダシクリエイティブ介绍</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/07/17/关于本网站是如何建成的/">关于本网站是如何建成的</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2020/09/28/查看Android的appPackage和Activity的便捷方法/">查看Android的appPackage和Activity的便捷方法</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2020/09/28/Postman界面及常用功能介绍/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2020/09/28/Postman界面及常用功能介绍/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/Postman/" style="font-size: 12.8689878381917px;" class="tag-cloud-link">Postman</a>
+    
+    <a href="/tags/介绍/" style="font-size: 16.30620022431257px;" class="tag-cloud-link">介绍</a>
+    
+    <a href="/tags/建站/" style="font-size: 19.19653780866794px;" class="tag-cloud-link">建站</a>
+    
+    <a href="/tags/教程/" style="font-size: 11.630324944548477px;" class="tag-cloud-link">教程</a>
+    
+    <a href="/tags/hexo/" style="font-size: 14.116787145814937px;" class="tag-cloud-link">hexo</a>
+    
+    <a href="/tags/Appium/" style="font-size: 19.92324761296268px;" class="tag-cloud-link">Appium</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank">Hexo</a>
+    </li>
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/hexo-theme-gal" target="_blank">Galtheme</a>
+    </li>
+    
+</div>
+                
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 Ireina Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '7'
+    }
+</script>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
+
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Mon Sep 28 2020 17:53:03 GMT+0800'
+      window.commentConfig.owner = 'zym27187'
+      window.commentConfig.repo = 'zymBlog-for-comment'
+      window.commentConfig.client_id = '7b4ec57c18e382211f16'
+      window.commentConfig.client_secret = '1093a4bb8ed0f7c1ed677828b6079ffbc49285b0'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Mon Sep 28 2020 17:53:03 GMT+0800',
+        owner: 'zym27187',
+        repo: 'zymBlog-for-comment',
+        client_id: '7b4ec57c18e382211f16',
+        client_secret: '1093a4bb8ed0f7c1ed677828b6079ffbc49285b0',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
+
+</html>
